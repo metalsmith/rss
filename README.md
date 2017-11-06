@@ -44,7 +44,7 @@ new Metalsmith("./")
 
 `site_url` is mandatory.
 
-#### `collections` (default: `"posts"`)
+#### `collection` (default: `"posts"`)
 
 Collection to use
 
