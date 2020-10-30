@@ -1,14 +1,10 @@
 ---
-# babel support more syntax stuff than eslint for now
-parser: babel-eslint
-
-ecmaFeatures:
-  modules: true
-
 env:
   es6: true
-  browser: true
   node: true
+
+parserOptions:
+  ecmaVersion: 2018
 
 # 0: off, 1: warning, 2: error
 rules:

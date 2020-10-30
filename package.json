@@ -10,33 +10,29 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MoOx/metalsmith-rss.git"
+    "url": "https://github.com/metalsmith/rss.git"
   },
-  "homepage": "https://github.com/MoOx/metalsmith-rss",
+  "homepage": "https://github.com/metalsmith/rss",
   "bugs": {
-    "url": "https://github.com/MoOx/metalsmith-rss/issues"
+    "url": "https://github.com/metalsmith/rss/issues"
   },
   "files": [
     "CHANGELOG.md",
     "LICENSE",
-    "dist"
+    "lib"
   ],
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "dependencies": {
-    "rss": "^1.1.1"
+    "rss": "^1.2.2"
   },
   "devDependencies": {
-    "babel": "^5.1.13",
-    "babel-eslint": "^3.0.1",
-    "babel-tape-runner": "^1.1.0",
-    "eslint": "^0.20.0",
-    "metalsmith": "^1.7.0",
-    "tape": "^4.0.0"
+    "eslint": "^7.12.1",
+    "metalsmith": "^2.3.0",
+    "tap": "^14.10.8"
   },
   "scripts": {
-    "lint": "eslint .",
-    "tape": "babel-tape-runner '__tests__/*.js'",
-    "test": "npm run lint && npm run tape",
-    "prepublish": "babel src --out-dir dist"
+    "lint": "eslint --fix .",
+    "tap": "tap test -J",
+    "test": "npm run lint && npm run tap"
   }
 }
