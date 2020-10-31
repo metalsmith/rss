@@ -1,11 +1,16 @@
-# metalsmith-rss [![Travis Build Status](https://travis-ci.org/MoOx/metalsmith-rss.svg)](https://travis-ci.org/MoOx/metalsmith-rss)
+# @metalsmith/rss
+
+[![npm version][npm-badge]][npm-url]
+[![metalsmith: plugin][metalsmith-badge]][metalsmith-url]
+
+[![Travis Build Status](https://travis-ci.org/metalsmith/metalsmith-rss.svg)](https://travis-ci.org/metalsmith/metalsmith-rss)
 
 > Metalsmith plugin to generate rss feed
 
 ## Installation
 
 ```console
-$ npm install metalsmith-rss
+$ npm install @metalsmith/rss
 ```
 
 ## Usage
@@ -13,7 +18,7 @@ $ npm install metalsmith-rss
 ```js
 import Metalsmith from "metalsmith"
 import collections from "metalsmith-collections"
-import rss from "metalsmith-rss"
+import rss from "@metalsmith/rss"
 
 new Metalsmith("./")
   .use(
@@ -29,7 +34,11 @@ new Metalsmith("./")
       },
     })
   )
-  .build(err => {if (err) {throw err}})
+  .build(err => {
+    if (err) {
+      throw err
+    }
+  })
 ```
 
 ### Options
@@ -56,7 +65,11 @@ RSS encoding
 
 Destination of the rss feed
 
-
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
+
+[npm-badge]: https://img.shields.io/npm/v/@metalsmith/rss.svg
+[npm-url]: https://www.npmjs.com/package/@metalsmith/rss
+[metalsmith-badge]: https://img.shields.io/badge/metalsmith-plugin-green.svg?longCache=true
+[metalsmith-url]: http://metalsmith.io
