@@ -23,4 +23,4 @@ This document follows the guidelines of [Keep A Changelog](http://keepachangelog
 :sparkles: Initial release
 
 [unreleased]: https://github.com/metalsmith/rss/compare/v1.0.1...HEAD
-[1.0.1]: https://github.com/metalsmith/rss/compare/v1.0.0...v1.0.1
+[1.0.1]: https://github.com/metalsmith/rss/compare/1.0.0...v1.0.1
