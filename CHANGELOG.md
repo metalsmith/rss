@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 This document follows the guidelines of [Keep A Changelog](http://keepachangelog.com).
 
-​## [Unreleased]
+## [Unreleased]
 
 ## [1.0.1] - 2020-10-31
 
