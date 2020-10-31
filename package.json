@@ -1,5 +1,5 @@
 {
-  "name": "metalsmith-rss",
+  "name": "@metalsmith/rss",
   "version": "1.0.0",
   "description": "Metalsmith plugin to generate rss feed",
   "keywords": [
@@ -33,6 +33,8 @@
   "scripts": {
     "lint": "eslint --fix .",
     "tap": "tap test -J",
-    "test": "npm run lint && npm run tap"
+    "test": "npm run lint && npm run tap",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish --scope=@metalsmith"
   }
 }
