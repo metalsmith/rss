@@ -21,7 +21,7 @@
     "LICENSE",
     "lib"
   ],
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "rss": "^1.2.2"
   },

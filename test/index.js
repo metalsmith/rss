@@ -1,7 +1,7 @@
 const test = require("tap").test
 
 const Metalsmith = require("metalsmith")
-const rss = require("../lib")
+const rss = require("../")
 
 test("metalsmith-rss", t => {
   new Metalsmith(__dirname)
