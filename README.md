@@ -1,9 +1,8 @@
 # @metalsmith/rss
 
 [![npm version][npm-badge]][npm-url]
+[![ci: build][ci-badge]][ci-url]
 [![metalsmith: plugin][metalsmith-badge]][metalsmith-url]
-
-[![Travis Build Status](https://travis-ci.org/metalsmith/metalsmith-rss.svg)](https://travis-ci.org/metalsmith/metalsmith-rss)
 
 > Metalsmith plugin to generate rss feed
 
