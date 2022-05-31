@@ -28,7 +28,7 @@
   "devDependencies": {
     "eslint": "^8.16.0",
     "metalsmith": "^2.3.0",
-    "tap": "^14.10.8"
+    "tap": "^16.2.0"
   },
   "scripts": {
     "lint": "eslint --fix .",
