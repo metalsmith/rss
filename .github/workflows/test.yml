@@ -6,8 +6,21 @@ on:
     branches: ['master']
 
 jobs:
+  pre-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+
+      - run: npm install
+      - run: npm run format:check
+      - run: npm run lint:check
+
   branch-test:
     if: github.ref_name != 'master' && success()
+    needs: pre-test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -25,6 +38,7 @@ jobs:
 
   test:
     if: github.ref_name == 'master' && success()
+    needs: pre-test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:

@@ -15,11 +15,11 @@ $ npm install @metalsmith/rss
 ## Usage
 
 ```js
-import Metalsmith from "metalsmith"
-import collections from "metalsmith-collections"
-import rss from "@metalsmith/rss"
+import Metalsmith from 'metalsmith'
+import collections from 'metalsmith-collections'
+import rss from '@metalsmith/rss'
 
-new Metalsmith("./")
+new Metalsmith('./')
   .use(
     collections({
       //...
@@ -28,12 +28,12 @@ new Metalsmith("./")
   .use(
     rss({
       feedOptions: {
-        title: "test",
-        site_url: "http://test.test",
-      },
+        title: 'test',
+        site_url: 'http://test.test'
+      }
     })
   )
-  .build(err => {
+  .build((err) => {
     if (err) {
       throw err
     }
