@@ -27,14 +27,24 @@
   },
   "devDependencies": {
     "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
     "metalsmith": "^2.3.0",
+    "prettier": "^2.6.2",
     "tap": "^14.10.8"
   },
   "scripts": {
+    "format": "prettier --write \"**/*.{yml,md,js,json}\"",
+    "format:check": "prettier --list-different \"**/*.{yml,md,js,json}\"",
     "lint": "eslint --fix .",
+    "lint:check": "eslint --fix-dry-run .",
     "tap": "tap test -J",
     "test": "npm run lint && npm run tap",
     "preversion": "npm test",
     "postversion": "git push && git push --tags && npm publish --scope=@metalsmith"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }
