@@ -60,9 +60,13 @@ Limit of items to put in the rss feed
 
 RSS encoding
 
-### `destination` (default: `"rss.xml"`)
+#### `destination` (default: `"rss.xml"`)
 
 Destination of the rss feed
+
+#### `pathProperty` (default: `"url"`)
+
+The name of the metadata property describing the relative path of the collection item.
 
 ## [Changelog](CHANGELOG.md)
 
